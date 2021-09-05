@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/css/uikit.min.css" />
+    <title>Ulkit | Tutorial| Ritvik Codes</title>
+</head>
+
+<body>
+    <header>
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+            <nav class="uk-navbar-container uk-navbar" uk-navbar="dropbar: true;">
+                <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#">Home</a></li>
+                        <li><a href="#">Gallery</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="uk-height-large uk-background-cover uk-light uk-flex uk-flex-top"
+            style="background-image: url('missionbanner.png');">
+            <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical"
+                uk-parallax="opacity: 0,1; y: 10,0; viewport: 0.5">Chandrayan 2</h1>
+        </div>
+        <h1 class="uk-heading-small">Space Craft Info </h1>
+        <hr>
+        <!-- This is a button toggling the modal #1 -->
+        <button class="uk-button uk-button-default uk-margin-medium" type="button"
+            uk-toggle="target: #Launcher-modal">Launcher</button>
+        <!-- This is the modal #1 -->
+        <div id="Launcher-modal" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+                <h2 class="uk-modal-title">Launcher</h2>
+                <p>The GSLV Mk-III will carry Chandrayaan 2 to its designated orbit. This three-stage vehicle is India's
+                    most powerful launcher to date, and is capable of launching 4-ton class of satellites to the
+                    Geosynchronous Transfer Orbit (GTO).</p>
+                <img src="spac-rocket.png" width="1000">
+                <p class="uk-text-right">
+                    <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+                </p>
+            </div>
+        </div>
+
+        <!-- This is a button toggling the modal #2 -->
+        <button class="uk-button uk-button-default uk-margin-medium" type="button"
+            uk-toggle="target: #Orbiter-Modal">Orbiter</button>
+        <!-- This is the modal #2 -->
+        <div id="Orbiter-Modal" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+                <h2 class="uk-modal-title">Orbiter</h2>
+                <p>Chandrayaan 2 Orbiter is capable of communicating with Indian Deep Space Network (IDSN) at Byalalu as
+                    well as the Vikram Lander. The precise launch and mission management has ensured a mission life of
+                    almost seven years instead of the planned one year.</p>
+                <img src="c2spac-rocket1.png" width="1000">
+                <p class="uk-text-right">
+                    <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+                </p>
+            </div>
+        </div>
+
+        <!-- This is a button toggling the modal #1 -->
+        <button class="uk-button uk-button-default uk-margin-medium" type="button"
+            uk-toggle="target: #Rover-Modal">Rover</button>
+        <!-- This is the modal #1 -->
+        <div id="Rover-Modal" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+                <h2 class="uk-modal-title">Rover</h2>
+                <p>Chandrayaan-2’s Rover was a 6-wheeled robotic vehicle named as Pragyan, which translates to 'wisdom'
+                    in Sanskrit.</p>
+                <img src="spac-rocket4.png" width="1000">
+                <p class="uk-text-right">
+                    <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+                </p>
+            </div>
+        </div>
+
+        <!-- This is a button toggling the modal #1 -->
+        <button class="uk-button uk-button-default uk-margin-medium" type="button"
+            uk-toggle="target: #Lander-Modal">Lander</button>
+        <!-- This is the modal #1 -->
+        <div id="Lander-Modal" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+                <h2 class="uk-modal-title">Lander</h2>
+                <p>The Lander of Chandrayaan-2 was named Vikram after Dr Vikram A Sarabhai, the Father of the Indian
+                    Space Programme. It was designed to function for one lunar day, which is equivalent to about 14
+                    Earth days.</p>
+                <img src="spac-rocket3.png" width="1000">
+                <p class="uk-text-right">
+                    <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+                </p>
+            </div>
+        </div>
+
+        <h1 class="uk-heading-small">Mission succes percentage: 98%</h1>
+        <hr>
+        <progress class="uk-progress" value="98" max="100"></progress>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit-icons.min.js"></script>
+</body>
+
+</html>
